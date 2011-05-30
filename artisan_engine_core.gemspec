@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'artisan_engine_core'
   s.summary     = 'Core of ArtisanEngine.'
-  s.description = 'Provides shared functionality for ArtisanEngine modules.'
+  s.description = 'Commerce functions for ArtisanEngine.'
   s.files       = Dir[ "{ app, config, lib }/**/*" ] + [ "Gemfile" ]
   s.version     = '0.0.1'
 
