@@ -8,9 +8,7 @@ Gem::Specification.new do |s|
   # --------------------- Runtime Dependencies --------------------- #
   ## --------------------------- Basics --------------------------- ##
   
-  s.add_runtime_dependency      'rails',                '3.0.7'
-  s.add_runtime_dependency      'sqlite3',              '1.3.3'
-  
+  s.add_runtime_dependency      'rails',                '3.0.7'  
   s.add_runtime_dependency      'inherited_resources',  '1.2.2'
   s.add_runtime_dependency      'friendly_id',          '3.2.1.1'
   
