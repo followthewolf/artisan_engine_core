@@ -1,0 +1,31 @@
+@import compass/css3
+
+$blueprint-font-family : "Gill Sans", Helvetica, Arial, sans-serif
+$blueprint-font-size	 : 14px
+$font-color				  	 : #75634F
+
+body
+	+blueprint-typography( true )
+	
+	header h1
+		color: rgba( 0, 0, 0, 0.7 )
+		+single-text-shadow( gray )
+		
+		text-align: right
+		
+		span
+			color: rgba( 255, 255, 255, 0.9 )
+	
+	#main
+		h1, h2, h3, h4
+			color: white
+			+single-text-shadow( #3A3A3A, 0, 0, 3px )
+			
+			text-align: center
+			letter-spacing: -1px
+			
+			padding-bottom: 10px
+			border-bottom: 1px dashed #DEE9DB
+			
+		p
+			font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif

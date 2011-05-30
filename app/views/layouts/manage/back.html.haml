@@ -1,0 +1,17 @@
+!!!
+
+%html
+	= render 'layouts/manage/head'
+			
+	%body
+		#wrapper
+			%header
+				%h1 
+					artisan
+					%span> engine
+			
+			#main
+				= render 'shared/notifications'
+				= yield
+			
+			%footer

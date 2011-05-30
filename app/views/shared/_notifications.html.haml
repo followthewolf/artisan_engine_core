@@ -1,0 +1,5 @@
+#notifications
+	- flash.each do |type, message|
+		.notification{ :class => "#{ type }" }
+			= message
+			= link_to 'Dismiss', '#'

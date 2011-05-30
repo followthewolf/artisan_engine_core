@@ -1,0 +1,7 @@
+- section ||= '#notifications'
+
+:plain
+	$( '#{ section }' )
+		.append( "#{ escape_javascript( render 'shared/notifications' ) }" )
+	
+	$('.notification:last').hide().slideDown()

@@ -1,0 +1,22 @@
+html
+	background: url( '/images/artisan_engine/core/body-bg.jpg' )
+	
+	body
+		background: url( '/images/artisan_engine/core/top-bg.jpg' ) no-repeat top center
+	
+		#wrapper
+			header, #main, footer
+				+container
+				padding: 0 20px
+				text-align: left	// Correct auto-centering in IE.
+				
+			header
+				height: 125px
+			
+			#main
+				background: url( '/images/artisan_engine/core/side-border-bg.jpg' ) repeat-y top left
+				min-height: 290px
+			
+			footer
+				background: url( '/images/artisan_engine/core/bottom-bg.png')
+				height: 20px
