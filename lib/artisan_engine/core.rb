@@ -21,12 +21,12 @@ module ArtisanEngine
     class Engine < Rails::Engine
       config.before_configuration do
         config.action_view.javascript_expansions[ :defaults ] += [ "artisan_engine/core/core", 
-                                                                   "artisan_engine/core/jquery.fancybox-1.3.4.pack" ]
+                                                                   "artisan_engine/core/colorbox" ]
       
         ActionView::Helpers::AssetTagHelper.register_stylesheet_expansion :artisan_engine       => [ "artisan_engine/core/back",
-                                                                                                     "artisan_engine/core/embed/fancybox/jquery.fancybox-1.3.4" ],
+                                                                                                     "artisan_engine/core/embed/colorbox/colorbox" ],
                                                                           :artisan_engine_front => [ "artisan_engine/core/front",
-                                                                                                     "artisan_engine/core/embed/fancybox/jquery.fancybox-1.3.4" ],
+                                                                                                     "artisan_engine/core/embed/colorbox/colorbox" ],
                                                                           :artisan_engine_print => [ "artisan_engine/core/print" ],
                                                                           :artisan_engine_ie    => [ "artisan_engine/core/ie" ]
       end

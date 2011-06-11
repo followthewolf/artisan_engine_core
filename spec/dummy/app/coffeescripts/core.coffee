@@ -12,25 +12,17 @@ $(document).ready( () ->
 			ev.preventDefault()
 			form = $(this)
 
-			$.fancybox({
-				modal: 	    true,
-				content:    "<div class='confirmation'>
-											<div class='inner'>
-												<p>Are you sure?</p>
-												
-												<input id='decline' type='button' value='No' /> 
-												<input id='accept' type='button' value='Yes' />
-											</div>
-										</div>",
-				
-				onComplete: () ->
-					$( '#decline' ).click( () -> $.fancybox.close() )
+			$.fn.colorbox({
+				transition: 'none',
+				html: "<div class='confirmation'><div class='inner'><p>Are you sure?</p><input id='decline' type='button' value='No' /><input id='accept' type='button' value='Yes' /></div></div>",
+				onComplete: () -> 
+					$('#cboxClose').hide()
+					$('#decline').click( () -> $.colorbox.close() )
 					$( '#accept' ).click( () ->
 						$.rails.handleRemote $(form)
-						$.fancybox.close()
-					)	
+						$.colorbox.close()
+					)
 			})
 		)
-	)
-	
+	)	
 )

@@ -15,9 +15,9 @@ describe ArtisanEngine::Core do
       .should include "artisan_engine/core/core"
     end
     
-    it "artisan_engine/core/jquery.fancybox-1.3.4.js" do
+    it "artisan_engine/core/colorbox.js" do
       ActionView::Helpers::AssetTagHelper.javascript_expansions[ :defaults ]
-      .should include "artisan_engine/core/jquery.fancybox-1.3.4.pack"
+      .should include "artisan_engine/core/colorbox"
     end
   end
   
@@ -28,9 +28,9 @@ describe ArtisanEngine::Core do
         .should include "artisan_engine/core/back"
       end
       
-      it "artisan_engine/core/embed/fancybox/jquery.fancybox-1.3.4.css" do
+      it "artisan_engine/core/embed/colorbox/colorbox.css" do
         ActionView::Helpers::AssetTagHelper.stylesheet_expansions[ :artisan_engine ]
-        .should include "artisan_engine/core/embed/fancybox/jquery.fancybox-1.3.4"
+        .should include "artisan_engine/core/embed/colorbox/colorbox"
       end
     end
     
@@ -40,9 +40,9 @@ describe ArtisanEngine::Core do
         .should include "artisan_engine/core/front"
       end
       
-      it "artisan_engine/core/embed/fancybox/jquery.fancybox-1.3.4.css" do
+      it "artisan_engine/core/embed/colorbox/colorbox.css" do
         ActionView::Helpers::AssetTagHelper.stylesheet_expansions[ :artisan_engine_front ]
-        .should include "artisan_engine/core/embed/fancybox/jquery.fancybox-1.3.4"
+        .should include "artisan_engine/core/embed/colorbox/colorbox"
       end
     end
     
